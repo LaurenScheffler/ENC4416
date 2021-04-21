@@ -1,0 +1,43 @@
+/*header{
+  background-color: #212529;
+
+}*/
+
+body{
+  background:#212529;
+}
+.nav-link active :hover{
+  color: #6EA8FE;
+ }
+ .nav-link{
+   color: rgb(166, 171, 177);
+   //color: #fff;
+ }
+.nav-item :hover{
+color: #6EA8FE;
+}
+h1 { 
+  text-align: center;
+  color: #fff;
+  //color: #212529;
+}
+h2{
+  color: #fff;
+}
+p{
+  color:#fff;
+}
+.img{
+  border-radius: 15px;
+}
+.image{
+  float: center;
+  text-align: center;
+  align-content: center; 
+  background-color: #ADB5BD;
+}
+#caption{
+  color:#ADB5BD;
+  font-size: 15px;
+  float: right;
+}
