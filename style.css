@@ -1,106 +1,182 @@
 
-body{
-  background:#212529;
-  
+body {
+  background: #212529;
 }
 
-.nav-link active :hover{
+.nav-item :hover {
   color: #6EA8FE;
- }
-
- .nav-link{
-   color: #a6abb1;
- }
-
-.nav-item :hover{
-color: #6EA8FE;
 }
 
-h1 { 
+.nav-link active :hover {
+  color: #6EA8FE;
+}
+
+.nav-link {
+  color: #a6abb1;
+}
+
+h1 {
   text-align: center;
   color: #fff;
 }
 
-h2{
+h2 {
   color: #fff;
 }
 
-p{
-  color:#fff;
+p {
+  color: #fff;
 }
 
-.image{
+.image {
   width: auto;
-  height: auto; 
+  height: auto;
   float: center;
   text-align: center;
-  align-content: center; 
+  align-content: center;
   background-color: #ADB5BD;
 }
 
-#caption{
-  color:#ADB5BD;
+#caption {
+  color: #ADB5BD;
   font-size: 15px;
   float: right;
 }
 
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  display: none;
+
+  /* Hidden by default */
+
+  position: fixed;
+
+  /* Fixed/sticky position */
+
+  bottom: 20px;
+
+  /* Place the button at the bottom of the page */
+
+  right: 30px;
+
+  /* Place the button 30px from the right */
+
+  z-index: 99;
+
+  /* Make sure it does not overlap */
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  /* Add a mouse pointer on hover */
+
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
 }
 
 #myBtn:hover {
   color: #6EA8FE;
 }
 
-h3{
+h3 {
   color: #fff;
 }
 
-h4{
+h4 {
   color: #fff;
   text-align: center;
 }
 
-#align{
+#align {
   align-content: center;
-  float:center;
+  float: center;
   align-items: center;
   justify-content: center;
   align-self: center;
   text-align: center;
 }
 
-#hover{
-  color:#fff;
+#hover {
+  color: #fff;
   text-decoration-line: none;
 }
 
-#hover :hover{
+#hover :hover {
   color: #6EA8FE;
 }
 
-.learn{
-  color:#fff;
-  text-decoration-line: none;
+.site {
+  color: #fff;
 }
 
-.site{
-  color:#fff;
+.filler {
+  height: 100%;
+  width: 100%;
+  background: #ADB5BD;
 }
 
-.filler{
-height: 250px;
-width:100%;
-background:#ADB5BD; 
+li {
+  color: #a6abb1;
 }
 
+strong {
+  font-weight: 600;
+}
+
+h1 {
+  letter-spacing: 1.5px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.4em;
+} */
+
+#timeline-content {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Timeline */
+
+.timeline {
+  border-left: 4px solid #0D6EFD;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;  
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 30%;
+  }
+
+  .event {
+    padding-bottom: (50px * 0.5);
+    margin-bottom: 50px;
+    position: relative;
+    }
+
+    .event::before {
+      left: (((120px * 0.6) + 50px + 4px + 11px + (4px * 2)) * 1.5) * -1;
+      color: fade(#fff, 40%);
+      content: attr(data-date);
+      text-align: right;
+      font-weight: 100;
+      font-size: 0.9em;
+      min-width: 120px;
+    }
+
+    .event::after {
+      box-shadow: 0 0 0 4px fade(#0D6EFD, 100%);
+      left: (50px + 4px + (11px * 0.35)) * -1;
+      background: lighten(#a6abb1, 5%);
+      border-radius: 50%;
+      height: 11px;
+      width: 11px;
+      content: "";
+      top: 5px;
+    }
