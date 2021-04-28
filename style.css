@@ -180,3 +180,12 @@ h1 {
       content: "";
       top: 5px;
     }
+
+hr {
+  color: #a6abb1;
+}
+
+footer {
+  color: #fff; 
+  text-align: left;
+}
